@@ -10,7 +10,7 @@ behaviors within the process, such as the management of *worklists*, thus ensuri
 
 Once this is done the next step is to use the extracted model and simulation inputs to perform new simulations of the process, even changing the simulation parameters to generate what-if scenario.
 
-In addition to the process discovery and parameter estimation features, the proposed framework extends to the management of incomplete traces of event logs. To address this problem, the framework implements an *analysis of the intermediate starting points*, i.e. the interruption points detected within the incomplete traces. Thanks to this feature, the framework is able to automatically identify the points where a process has been interrupted, analyze them and generate new ad-hoc data to allow the continuation of the simulation starting from those points.
+In addition to the process discovery and parameter estimation features, the proposed framework extends to the management of incomplete traces of event logs. To address this problem, the framework implements an **analysis of the intermediate starting points**, i.e. the interruption points detected within the incomplete traces. Thanks to this feature, the framework is able to automatically identify the points where a process has been interrupted, analyze them and generate new ad-hoc data to allow the continuation of the simulation starting from those points.
 
 ## Getting Started
 This section will guide you through setting up the tool and running on your local machine for development and testing purposes.
@@ -51,13 +51,13 @@ Once the necessary requirements are installed, you can execute the tool from a t
 **Example of basic execution:**
 
 ```shell
-PS C:\parameters-estimation> python main.py --file log_test3.xes
+C:\parameters-estimation> python main.py --file log_test3.xes
 ```
 
 **Example of execution updating the input parameters**
 
 ```shell
-PS C:\parameters-estimation> python main.py --file log_test3.xes --simthreshold 0.9 --eta 0.01 --eps 0.001
+C:\parameters-estimation> python main.py --file log_test3.xes --simthreshold 0.9 --eta 0.01 --eps 0.001
 ```
 
 ## Author
