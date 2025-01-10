@@ -1,11 +1,13 @@
 # DataLogX: A Framework for Automated Generation of Process Simulation Scenarios from Event Logs
-**DataLogX** is a fraemwork for the automated generation of process simulation scenarios from event logs. The proposed framework allows one to elaborate real or synthetic event logs and to automatically perform two fundamental operations:
-* Process Discovery: the construction of the process model in BPMN format starting from the event log.
-* Parameter Estimation: estimation of the simulation parameters, necessary to configure the simulation models in a way that is consistent with the characteristics of the production process.
+**DataLogX** is a framework for the automated generation of process simulation scenarios from event logs. The proposed framework allows one to elaborate real or synthetic event logs and to automatically perform two fundamental operations:
+* **Process Discovery**: the construction of the process model in BPMN format starting from the event log.
+* **Parameter Estimation**: estimation of the simulation parameters, necessary to configure the simulation models in a way that is consistent with the characteristics of the production process.
+
 In particular, the framework estimates multiple parameters. These include:
 * *standard parameters* typically used in simulation;
 * *domain-specific parameters* tailored to the manufacturing context. The latter allow the detection of different
 behaviors within the process, such as the management of *worklists*, thus ensuring that the simulation reflects real-world production dynamics more accurately.
+
 Once this is done the next step is to use the extracted model and simulation inputs to perform new simulations of the process, even changing the simulation parameters to generate what-if scenario.
 
 In addition to the process discovery and parameter estimation features, the proposed framework extends to the management of incomplete traces of event logs. To address this problem, the framework implements an *analysis of the intermediate starting points*, i.e. the interruption points detected within the incomplete traces. Thanks to this feature, the framework is able to automatically identify the points where a process has been interrupted, analyze them and generate new ad-hoc data to allow the continuation of the simulation starting from those points.
