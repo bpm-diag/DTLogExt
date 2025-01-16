@@ -1,5 +1,5 @@
 # DTLogExt: A Framework for Automated Generation of Process Simulation Scenarios from Event Logs
-**DataLogX** is a framework for the automated generation of process simulation scenarios from event logs. The proposed framework allows one to elaborate real or synthetic event logs and to automatically perform two fundamental operations:
+**DTLogExt** is a framework for the automated generation of process simulation scenarios from event logs. The proposed framework allows one to elaborate real or synthetic event logs and to automatically perform two fundamental operations:
 * **Process Discovery**: the construction of the process model in BPMN format starting from the event log.
 * **Parameter Estimation**: estimation of the simulation parameters, necessary to configure the simulation models in a way that is consistent with the characteristics of the production process.
 
@@ -51,13 +51,13 @@ Once the necessary requirements are installed, you can execute the tool from a t
 **Example of basic execution:**
 
 ```shell
-C:\parameters-estimation> python main.py --file log_test3.xes
+C:\DTLogExt> python main.py --file log_test3.xes
 ```
 
 **Example of execution updating the input parameters**
 
 ```shell
-C:\parameters-estimation> python main.py --file log_test3.xes --simthreshold 0.9 --eta 0.01 --eps 0.001
+C:\DTLogExt> python main.py --file log_test3.xes --simthreshold 0.9 --eta 0.01 --eps 0.001
 ```
 
 ## Author
